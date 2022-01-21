@@ -13,7 +13,8 @@ export default [{
     id: 'm1',
     content: 'btw, SpaceX is interested in buying notJust.dev!',
     createdAt: '2020-10-03T14:48:00.000Z',
-  }
+  },
+  newMessages: 5
 }, {
   id: '2',
   users: [{
@@ -128,6 +129,70 @@ export default [{
   }
 }, {
   id: '9',
+  users: [{
+    id: 'u1',
+    name: 'Vadim',
+    imageUri: 'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/vadim.jpg',
+  }, {
+    id: 'u10',
+    name: 'Angelina Jolie',
+    imageUri: 'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/4.jpg',
+  }],
+  lastMessage: {
+    id: 'm9',
+    content: 'Meet me at the same place',
+    createdAt: '2020-09-25T15:40:00.000Z',
+  },
+},{
+  id: '10',
+  users: [{
+    id: 'u1',
+    name: 'Vadim',
+    imageUri: 'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/vadim.jpg',
+  }, {
+    id: 'u10',
+    name: 'Angelina Jolie',
+    imageUri: 'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/4.jpg',
+  }],
+  lastMessage: {
+    id: 'm9',
+    content: 'Meet me at the same place',
+    createdAt: '2020-09-25T15:40:00.000Z',
+  },
+}, {
+  id: '11',
+  users: [{
+    id: 'u1',
+    name: 'Vadim',
+    imageUri: 'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/vadim.jpg',
+  }, {
+    id: 'u10',
+    name: 'Angelina Jolie',
+    imageUri: 'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/4.jpg',
+  }],
+  lastMessage: {
+    id: 'm9',
+    content: 'Meet me at the same place',
+    createdAt: '2020-09-25T15:40:00.000Z',
+  },
+},{
+  id: '12',
+  users: [{
+    id: 'u1',
+    name: 'Vadim',
+    imageUri: 'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/vadim.jpg',
+  }, {
+    id: 'u10',
+    name: 'Angelina Jolie',
+    imageUri: 'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/4.jpg',
+  }],
+  lastMessage: {
+    id: 'm9',
+    content: 'Meet me at the same place',
+    createdAt: '2020-09-25T15:40:00.000Z',
+  },
+},{
+  id: '13',
   users: [{
     id: 'u1',
     name: 'Vadim',
