@@ -1,32 +1,53 @@
-import { StyleSheet } from 'react-native';
+import { View, Text, StyleSheet, Image } from "react-native";
+import React from "react";
 
-import EditScreenInfo from '../components/EditScreenInfo';
-import { Text, View } from '../components/Themed';
-import { RootTabScreenProps } from '../types';
-
-export default function TabOneScreen({ navigation }: RootTabScreenProps<'TabOne'>) {
+const TabOneScreen = () => {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Tab One</Text>
-      <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
-      <EditScreenInfo path="/screens/TabOneScreen.tsx" />
+      <Image
+        style={styles.image}
+        source={{
+          uri: "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/vadim.jpg",
+        }}
+      />
+      <View style={styles.rightContainer}>
+        <View style={styles.row}>
+          <Text style={styles.name}>Wilson Lopez</Text>
+          <Text style={styles.text}>11:15</Text>
+        </View>
+        <Text numberOfLines={1} style={styles.text}>HOla komo estas? xD</Text>
+      </View>
     </View>
   );
-}
+};
+
+export default TabOneScreen;
 
 const styles = StyleSheet.create({
+  text: {
+    color: "grey",
+  },
+  image: {
+    width: 50,
+    height: 50,
+    borderRadius: 30,
+    marginRight: 10,
+  },
   container: {
+    flexDirection: "row",
+    padding: 10,
+  },
+  row: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+  },
+  name: {
+    fontWeight: "bold",
+    fontSize: 18,
+    marginBottom: 3
+  },
+  rightContainer: {
     flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  title: {
-    fontSize: 20,
-    fontWeight: 'bold',
-  },
-  separator: {
-    marginVertical: 30,
-    height: 1,
-    width: '80%',
+    justifyContent: 'center'
   },
 });
