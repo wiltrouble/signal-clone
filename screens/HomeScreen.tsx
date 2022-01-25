@@ -4,7 +4,7 @@ import React from "react";
 import ChatRoomItem from "../components/ChatRoomItem";
 import ChatRoomsData from '../assets/data/ChatRooms';
 
-const TabOneScreen = () => {
+const HomeScreen = () => {
   return (
     <View style={styles.page}>
       <FlatList 
@@ -16,7 +16,7 @@ const TabOneScreen = () => {
   );
 };
 
-export default TabOneScreen;
+export default HomeScreen;
 
 const styles = StyleSheet.create({
   page: {
