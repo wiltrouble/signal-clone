@@ -33,8 +33,6 @@ const MessageInput = () => {
     } else {
       onPlusClicked()
     }
-    
-    
   }
   return (
     <KeyboardAvoidingView 

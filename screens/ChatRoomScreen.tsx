@@ -1,16 +1,10 @@
 import { View, Text, StyleSheet, FlatList, SafeAreaView } from 'react-native';
 import { useRoute, useNavigation } from '@react-navigation/core';
-;
 
 import React from 'react';
 import Message from '../components/Message';
 import chatRoomData from '../assets/data/Chats';
 import MessageInput from '../components/MessageInput';
-
-
-
-
-
 
 const ChatRoomScreen = () => {
   const route = useRoute()

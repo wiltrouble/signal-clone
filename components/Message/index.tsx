@@ -3,9 +3,7 @@ import React from 'react';
 
 const blue = '#3777f0'
 const grey = 'lightgrey'
-
 const myID = 'u1'
-
 
 const Message = ({message}) => {
   const isMe = message.user.id === myID;
